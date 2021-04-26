@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --mode=development",
+    "test": "vue-cli-service serve --mode=test",
+    "prev": "vue-cli-service serve --mode=prev",
+    "build": "vue-cli-service build --mode=production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1"
@@ -20,8 +23,12 @@
     "element-ui": "^2.15.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "less-loader": "^7.3.0",
+    "mockjs": "^1.1.0",
     "node-sass": "^5.0.0",
-    "sass-loader": "^11.0.1",
+    "sass-loader": "^6.0.7",
+    "scss": "^0.2.4",
+    "scss-loader": "0.0.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-axios": "^3.2.4",
     "vue-cookie": "^1.1.4",
